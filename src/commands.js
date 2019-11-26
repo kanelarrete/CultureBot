@@ -49,8 +49,6 @@ module.exports = {
     return Database.LookupMeme(meme)
       .then(returned => {
         if(!returned)
-          return `http://i0.kym-cdn.com/photos/images/original/000/993/875/084.png`;
-        else
           return returned.text;
       });
   },
